@@ -1,12 +1,12 @@
-let intArr = [1, 2, 3, 4, 5];
+const intArr = [1, 2, 3, 4, 5];
 let minNum = intArr[0];
 let maxNum = intArr[0];
 
 for (let index = 0; index < intArr.length; index++) {
-    if (minNum > intArr[index]) {
+    if (intArr[index] < minNum) {
         minNum = intArr[index];
     }
-    if (maxNum < intArr[index]) {
+    if (intArr[index] > maxNum) {
         maxNum = intArr[index];
     }
 }
