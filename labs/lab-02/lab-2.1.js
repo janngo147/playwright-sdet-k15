@@ -16,15 +16,12 @@ console.log(`BMI = ${roundedBMI}`);
 if (roundedBMI < 18.5) {
     console.log('Underweight');
 }
-else if (roundedBMI >= 18.5 && roundedBMI <= 24.9) {
+else if (roundedBMI <= 24.9) {
     console.log('Normal weight');
 }
-else if (roundedBMI >= 25 && roundedBMI <= 29.9) {
+else if (roundedBMI <= 29.9) {
     console.log('Overweight');
 }
-else if (roundedBMI >= 30) {
-    console.log('Obesity');
-}
 else {
-    console.log('Data type is incorrect')
+    console.log('Obesity');
 }
